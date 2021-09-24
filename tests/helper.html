@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+            background-color: black;
+            padding: 20px;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" onclick="myfunc('div1')">
+        Holla
+    </div>
+
+    <div id="div2" onclick="myfunc('div2')">
+        Hfbfbsdnmf
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        function myfunc(event) {
+            var id = "'#" + (event) + "'";
+            document.querySelector(id).classList.add("red");
+            window.history.pushState({ event }, '', "./" + event);
+        }
+
+        window.addEventListener("popstate", e => {
+            console.log(e.state.event);
+            myfunc(e.state.event);
+            history.replaceState({ event: null }, '', './');
+        });
+    </script>
+</body>
+
+</html>

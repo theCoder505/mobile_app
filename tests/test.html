@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../anitabs.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+        </script>
+    <script src="../anitabs.js"></script>
+    <style>
+
+
+
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="tabs js-tabs">
+        <div class="tabs-nav js-tabs-nav" id="example">
+            <ul class="tabs-nav__list">
+                <li class="tabs-nav__item js-tabs-item active">
+                    <a class="tabs-nav__link js-tabs-link" href="#tab-1">First tab</a>
+                </li>
+                <li class="tabs-nav__item js-tabs-item">
+                    <a class="tabs-nav__link js-tabs-link" href="#tab-2">Second tab</a>
+                </li>
+                <li class="tabs-nav__item js-tabs-item">
+                    <a class="tabs-nav__link js-tabs-link" href="#tab-3">Third tab</a>
+                </li>
+            </ul>
+            <span class="tabs-nav__drag js-tabs-drag"></span>
+        </div>
+
+
+        
+        <div class="tabs-content js-tabs-wrap">
+            <div class="tab js-tabs-content active" id="tab-1">
+                First Content
+            </div>
+            <div class="tab js-tabs-content" id="tab-2">
+                Second Content
+            </div>
+            <div class="tab js-tabs-content" id="tab-3">
+                Third Content
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        // $(".js-tabs-link").aniTabs();
+
+        $(".js-tabs-link").aniTabs({
+            animation: "slide",
+            slideDirection: "left", // or right
+            animationSpeed: 10000//
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

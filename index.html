@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>MOBILE APPLICATION</title>
+</head>
+
+<body>
+
+
+    <section id="application">
+
+        <div id="appPage">
+
+
+            <!-- main page section where foreignPage is the subMenu page  -->
+            <div id="contentPart">
+
+
+                <div id="homePage" class="commonPageClass activeNow">
+                    <div class="all_points_flex_div">
+
+                        <div class="all_points slide1">
+                            <div id="appoinment">
+                                Appoinment
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">child_care</i>
+                                <p href="pediatrics.html" class="para_blue" onclick="dataProductionLogic('pediatrics')">
+                                    Pediatrics
+                                </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">pregnant_woman</i>
+                                <p class="para_blue"> Obstetrics & Gynecology </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">visibility</i>
+                                <p class="para_blue"> Ophthalmology </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">local_hospital</i>
+                                <p class="para_blue"> Internal Medicine </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">hearing</i>
+                                <p class="para_blue"> Otolaryngology </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">back_hand</i>
+                                <p class="para_blue"> Dermatology </p>
+                            </div>
+
+
+
+                            <div id="appoinment">
+                                Today's Reminder
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">account_circle</i>
+                                <p class="para_blue"> Dr. Helen Jefferson </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">medical_services</i>
+                                <p class="para_blue"> Pedro Clinic </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons">child_care</i>
+                                <p class="para_blue"> Pediatrics </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons black_gray">format_list_numbered</i>
+                                <p class="para_blue black_gray"> Now #16 / You're #20 </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons black_gray">update</i>
+                                <p class="para_blue black_gray"> 20 mins waiting </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons black_gray">watch_later</i>
+                                <p class="para_blue black_gray"> 18:00 - 19:00 </p>
+                            </div>
+                            <div class="text_div">
+                                <i class="material-icons last_line">videocam</i>
+                                <div class="grid_container">
+                                    <p class="online"> Online </p>
+                                    <p class="startChat"> Start Chat </p>
+                                    <p class="cancel"> Cancel </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div id="foreignPages" class="commonPageClass"></div>
+
+
+            </div>
+
+
+
+
+            <div class="scrollingPoint"></div>
+
+
+
+
+            <div id="bottomNav">
+                <div class="nav_grid">
+                    <div id="home" class="home nav activated" onclick="activateFunc(this)">
+                        <i class="material-icons">home</i>
+                        <p class="nav_para">
+                            Home
+                        </p>
+                    </div>
+                    <div id="record" class="record nav" onclick="activateFunc(this)">
+                        <i class="material-icons">text_snippet</i>
+                        <p class="nav_para">
+                            records
+                        </p>
+                    </div>
+                    <div id="notifications" class="notifications nav" onclick="activateFunc(this)">
+                        <i class="material-icons">notifications</i>
+                        <p class="nav_para">
+                            notifications
+                        </p>
+                    </div>
+                    <div id="account" class="account nav" onclick="activateFunc(this)">
+                        <i class="material-icons">account_circle</i>
+                        <p class="nav_para">
+                            account
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

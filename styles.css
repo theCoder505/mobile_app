@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#appPage{
+    margin: 0px auto;
+}
+
+#homePage{
+    background-color: #fff;
+}
+
+#appPagePedriates{
+    margin: 0px auto;
+}
+
+/* .all_points{
+    min-height: 90vh;
+} */
+
+#appoinment {
+    background-color: #f7f7f7;
+    color: #5e5e5e;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 18px;
+}
+
+.text_div {
+    display: flex;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+
+.material-icons, .para_blue, .online, .startChat, .activated, .sub_home, .text_blue{
+    color: #4980dd;
+}
+
+.material-icons{
+    font-size: 20px;
+}
+
+.cancel{
+    color: #cd553c;
+}
+
+
+.para_blue {
+    margin-left: 15px;
+    max-width: 280px;
+    overflow-wrap: break-word;
+}
+
+.black_gray{
+    color: #5d5d5d;
+}
+
+
+
+.online { grid-area: online; margin-left: 5px;}
+.startChat { grid-area: chat; text-align: center; }
+.cancel { grid-area: cancel; }
+
+.grid_container{
+    display: grid;
+    grid-template-areas: 'online chat chat cancel';
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-top: -10px;
+    margin-right: -25px;
+}
+
+.scrollingPoint {
+    height: 150px;
+    background-color: #f7f7f7;
+}
+
+
+
+
+
+
+#bottomNav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+}
+
+
+#bottomNav .nav{
+    text-align: center;
+    padding: 10px;
+    color: #bfbfbf;
+}
+
+#bottomNav .material-icons {
+    font-size: 25px;
+    color: #bfbfbf;
+}
+
+.point_loc_san_cal .black_gray .material-icons{
+    color: #5d5d5d;
+}
+
+.activated{
+    border-top: 3px solid #4980dd;
+    color: #4980dd!important;
+}
+
+#bottomNav .activated .material-icons{
+    color: #4980dd;
+}
+
+
+.home { grid-area: home;}
+.record { grid-area: record;}
+.notifications { grid-area: notifications; }
+.account { grid-area: account; }
+
+.nav_grid{
+    display: grid;
+    grid-template-areas: 'home record notifications account';
+}
+
+
+/* ------------------ pediatrics page -----------------  */
+.bgWhite{
+    background-color: #fff;
+}
+
+
+#appoinment_sub{
+    background-color: #f7f7f7;
+    color: #5e5e5e;
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.app_sub_grid{
+    display: grid;
+    grid-template-areas: 'sub_home ped ped ped ped';
+}
+
+.sub_home{grid-area: sub_home;}
+.ped{grid-area: ped; padding-left: 20px;}
+
+
+.all_points .material-icons{
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+
+
+.point_loc_san_cal{
+    display: grid;
+    grid-template-areas: 'loc san cal';
+    padding: 15px 10px;
+}
+
+.location{grid-area: loc;}
+.san{grid-area: san; margin-top: 5px;}
+.callifornia{grid-area: cal; margin-top: 5px;}
+
+
+
+
+
+
+
+#notesDiv{
+    margin-top: 20px;
+}
+
+.notes_grid{
+    display: grid;
+    grid-template-areas: 'left11 left11 left11 left11 right11';
+    padding: 15px 25px;
+}
+
+.note_left{grid-area: left11;}
+.note_right{grid-area: right11;}
+
+.flex_div{
+    display: flex;
+}
+
+.marginBtm{
+    margin-bottom: 20px;
+}
+
+#notesDiv .material-icons{
+    top: 0px;
+}
+
+.starIcon{
+    margin-right: 7px;
+}
+
+
+.padClass{
+    display: none;
+}
+
+.padCommonClass{
+    transition: all 0.5s ease-in-out;
+}
+
+.activated_part{
+    display: block;
+}
+
+
+.text_div p:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* -------------- setting the home and foreign pages css -------------  */
+
+#contentPart {
+    position: relative;
+}
+
+.commonPageClass {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 1s;
+}
+
+.activeNow{
+    position: relative;
+    display: block;
+}
+
+.slide{
+    animation: slide 0.3s linear;
+}
+.slideBack{
+    animation: slideBack 0.3s linear;
+}
+
+
+
+@keyframes slide{
+    0%{
+        left: 100%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+@keyframes slideBack{
+    0%{
+        left: -100%;
+    }
+    50%{
+        left: -50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 380px) {
+
+}
